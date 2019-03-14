@@ -19,7 +19,7 @@ public class Line {
         //获取字体
         Font font = new Font("方正粗黑宋简体", Font.BOLD, 20);
         graphics.setFont(font);
-        graphics.setColor(Color.WHITE);
+        graphics.setColor(Color.BLUE);
         //绘制一个白色矩形
         graphics.fillRect(0, 0, 1024, 768);
         //
