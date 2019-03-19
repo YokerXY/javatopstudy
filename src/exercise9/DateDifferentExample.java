@@ -18,6 +18,7 @@ public class DateDifferentExample {
         String fiveTime = "2019-3-18 7:44:56";
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Date currentTime = new Date();
+        System.out.println(currentTime);
         String twoTime = format.format(currentTime);
         Date d1, d2, d3, d4, d5;
             long diff1 = 0;

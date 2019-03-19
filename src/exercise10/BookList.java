@@ -11,7 +11,7 @@ public class BookList {
         List<Book> booklist =new ArrayList<>();
         booklist.add(new Book(1,"红楼梦",11.11));
         booklist.add(new Book(2,"背影",22.99));
-        booklist.add(new Book(6,"红楼梦",55.33));
+        booklist.add(new Book(6,"红楼梦", 55.33));
         System.out.println(" ID      书名    价格");
         System.out.println("----原数据--------");
         booklist.forEach(book -> System.out.println(book.getId()+"  "+book.getName()+"  "+book.getPrice()));
