@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Comparable的练习
+ * @author 许源 2019年3月20日
+ */
 public class CarList {
     public static void main(String[] args) {
         List<Car> list = new ArrayList<>();
