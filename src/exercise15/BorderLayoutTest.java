@@ -34,7 +34,6 @@ public class BorderLayoutTest extends JFrame {
         setVisible(true);
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
     }
-
     public static void main(String[] args) {
         new  BorderLayoutTest();
     }
