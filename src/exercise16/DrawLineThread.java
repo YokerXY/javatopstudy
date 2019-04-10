@@ -6,8 +6,8 @@ import java.awt.*;
 import java.util.Random;
 
 public class DrawLineThread implements Runnable {
-    int x = 0;
-    int y = 700;
+    int x = 200;
+    int y = 100;
     private JFrame frame;
     private Color[] colors = {Color.WHITE, Color.BLUE, Color.YELLOW, Color.CYAN, Color.PINK, Color.RED
             , Color.ORANGE, Color.MAGENTA, Color.GRAY};
@@ -27,10 +27,10 @@ public class DrawLineThread implements Runnable {
             }
             Graphics graphics = frame.getGraphics();
             graphics.setColor(colors[random.nextInt(colors.length)]);
-            graphics.drawLine(x, y, 200, 300);
-            x += 20;
-            if (x >= 1000) {
-                break;
+            graphics.drawLine(x, y, 650, y);
+                    y += 10;
+            if (y >= 500) {
+                y  = 100;
             }
         }
     }
