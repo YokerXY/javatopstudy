@@ -2,25 +2,21 @@ package exercise18;
 
 
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
 import java.net.Socket;
 import java.util.Scanner;
-
+import java.io.*;
 public class Client2 {
     public static void main(String[] args) throws IOException {
-        Socket socket = new Socket("192.168.43.245",2222);
-        OutputStream out = socket.getOutputStream();
+        Socket client = new Socket("localhost",10000);
+        System.out.println("成功连接上服务器");
         Scanner scanner = new Scanner(System.in);
-        while (true){
-            System.out.println("请输入要发给服务器的内容:");
-            String info  = scanner.nextLine();
-            out.write(info.getBytes());
-            InputStream in = socket.getInputStream();
-            byte[] b = new byte[1024];
-            in.read(b);
-            System.out.println("服务端发送的数据是："+new String(b));
-        }
-
+        BufferedWriter buf;
+        System.out.println("请输入一行信息： ");
+        String str = scanner.nextLine();
+        buf = new BufferedWriter(new OutputStreamWriter(client.getOutputStream()));
+        buf.write(str);
+        buf.flush();
+        buf.close();
     }
+
 }
