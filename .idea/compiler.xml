@@ -21,7 +21,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="jdbc-study" target="1.5" />
-      <module name="zhanwuming" target="1.5" />
+      <module name="zhanwuming" target="6" />
     </bytecodeTargetLevel>
   </component>
 </project>
